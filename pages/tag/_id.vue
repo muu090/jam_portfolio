@@ -1,8 +1,10 @@
 <template>
   <div>
-    <Item v-for="work in works"
-          :key="work.sys.id" 
-          :work="work"/>
+    <Item 
+      v-for="work in works"
+      :key="work.sys.id" 
+      :work="work"
+    />
   </div>
 </template>
 
