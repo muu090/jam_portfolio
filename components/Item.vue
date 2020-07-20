@@ -1,9 +1,11 @@
 <template>
    <div>
     <div class="w-full m-2 pb-3 bg-white overflow-hidden shadow-lg">
-      <div class="absolute bg-white py-1 px-3 rounded shadow mt-1 ml-1 text-sm">
-        {{ work.fields.category.fields.name }}
-      </div>
+      <nuxt-link :to=" '/category/' + work.fields.category.sys.id ">
+        <div class="absolute bg-white py-1 px-3 rounded shadow mt-1 ml-1 text-sm">
+          {{ work.fields.category.fields.name }}
+        </div>
+      </nuxt-link>
       <div class="mb-3 w-full h-64 bg-center bg-cover" :style=" 'background-image: url(' + work.fields.image.fields.file.url + ')' "></div>
       <nuxt-link :to=" '/work/' + work.fields.slug ">
         <h3 class="ml-3 font-bold">{{ work.fields.title }}</h3>
