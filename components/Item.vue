@@ -14,7 +14,7 @@
       </nuxt-link>
       <h4 class="ml-3 my-2 text-xs">{{ work.fields.subtitle }}</h4>
 
-      <div class="flex ml-2">
+      <div class="flex ml-2 flex-wrap">
         <li v-for="tag in work.fields.tag"
             :key="tag.sys.id"
             class="list-none text-xs m-1 bg-gray-200 p-1 rounded cursor-pointer"
