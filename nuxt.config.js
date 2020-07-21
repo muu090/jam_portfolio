@@ -1,9 +1,11 @@
-const config = require('./.contentful.json')
 const contentful = require('contentful')
 
+require('dotenv').config();
+const { CTF_SPACE_ID, CTF_CDA_ACCESS_TOKEN } = process.env;
+
 const client = contentful.createClient({
-  space: config.CTF_SPACE_ID,
-  accessToken: config.CTF_CDA_ACCESS_TOKEN
+  space: CTF_SPACE_ID,
+  accessToken: CTF_CDA_ACCESS_TOKEN
 }) 
 
 export default {
@@ -19,8 +21,8 @@ export default {
   target: 'static',
 
   env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
+    CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN
   },
 
   /*
@@ -68,7 +70,8 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
-
+    
+    '@nuxtjs/dotenv',
     '@nuxtjs/markdownit',
     'nuxt-fontawesome'
   ],
