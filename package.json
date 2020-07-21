@@ -21,6 +21,4 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.0.0"
   },
-
-  "build": "nuxt build && nuxt export"
 }
