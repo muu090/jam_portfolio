@@ -18,14 +18,14 @@
             Works
           </button>
         </nuxt-link>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <!-- <a href="http://" target="_blank" rel="noopener noreferrer">
           <button>
             <fa-layers full-width class="fa-2x block mx-auto mb-1">
               <fa :icon="faTwitter" />
             </fa-layers>
             Twitter
           </button>
-        </a>
+        </a> -->
         <a href="https://github.com/muu090" target="_blank" rel="noopener noreferrer">
           <button>
             <fa-layers full-width class="fa-2x block mx-auto mb-1">
